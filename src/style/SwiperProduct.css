@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .product .swiper-button-next,
+  .product .swiper-button-prev,
+  .product .swiper-button-next:after,
+  .product .swiper-pagination,
+  .product .swiper-button-prev:after {
+    top: unset !important;
+    bottom: unset !important;
+    right: unset !important;
+    left: unset !important;
+    width: auto !important;
+    position: unset !important;
+    color: unset !important;
+    font-size: unset !important;
+    height: unset !important;
+    margin-top: unset !important;
+    text-align: unset !important;
+  }
+  .product .swiper-pagination {
+    display: flex;
+    align-items: center;
+  }
+  .product .swiper-button-prev svg,
+  .product .swiper-button-next svg {
+    width: unset !important;
+    height: unset !important;
+    /* object-fit: unset !important; */
+    /* transform-origin: unset; */
+  }
+  .product .swiper-rtl .swiper-button-prev svg,
+  .product .swiper-rtl .swiper-button-next svg {
+    transform: unset !important;
+  }
+
+  .product .swiper-button-prev:after,
+  .product .swiper-rtl .swiper-button-next:after {
+    content: unset;
+  }
+
+  .product .swiper-button-next:after,
+  .product .swiper-rtl .swiper-button-prev:after {
+    content: unset;
+  }
+  .product .swiper-pagination-bullet {
+    background: #4c91dd;
+    opacity: 50%;
+  }
+  .product .swiper-pagination-bullet-active {
+    background: #4c91dd;
+    opacity: 100%;
+  }
+}
